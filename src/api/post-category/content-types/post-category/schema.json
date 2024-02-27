@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "post_categories",
+  "info": {
+    "singularName": "post-category",
+    "pluralName": "post-categories",
+    "displayName": "PostCategory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "post_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::post.post",
+      "inversedBy": "post_categories"
+    },
+    "category_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "post_categories"
+    }
+  }
+}

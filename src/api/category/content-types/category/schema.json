@@ -16,11 +16,11 @@
       "required": true,
       "unique": true
     },
-    "restaurants": {
+    "post_categories": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::restaurant.restaurant",
-      "inversedBy": "categories"
+      "relation": "oneToMany",
+      "target": "api::post-category.post-category",
+      "mappedBy": "category_id"
     }
   }
 }
