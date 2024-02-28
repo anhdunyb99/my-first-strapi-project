@@ -35,6 +35,16 @@
       "relation": "oneToMany",
       "target": "api::post-category.post-category",
       "mappedBy": "post_id"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

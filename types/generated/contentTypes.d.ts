@@ -431,6 +431,7 @@ export interface ApiPostPost extends Schema.CollectionType {
       'oneToMany',
       'api::post-category.post-category'
     >;
+    image: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
